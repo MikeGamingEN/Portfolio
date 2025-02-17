@@ -5,12 +5,24 @@ body {
     background-color: #f4f4f4;
     color: #333;
     text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
 }
 
 header {
     background-color: #333;
     color: white;
     padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header.dark-mode {
+    background-color: #1e1e1e;
+    color: #ffffff;
 }
 
 nav ul {
@@ -28,6 +40,35 @@ nav ul li a {
     text-decoration: none;
 }
 
+nav {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav.dark-mode {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
 section {
     padding: 50px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+section.dark-mode {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+button#dark-mode-toggle {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode button#dark-mode-toggle {
+    background-color: #000000;
+    color: #ffffff;
 }

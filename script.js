@@ -5,3 +5,12 @@ document.querySelectorAll('nav ul li a').forEach(link => {
         target.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll effect
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const toggleButton = document.getElementById('dark-mode-toggle');
+    const body = document.body;
+
+    toggleButton.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+    });
+});
